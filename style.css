@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+@font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("fonts/Booter - Zero Zero.woff") format("woff"),
+    url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+  /* src: url('fonts/Booter\ -\ Zero\ Zero.woff') format('woff'),
+        url('Fonts/Booter\ -\ Zero\ Zero.woff2') format('woff2');*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  /* box-sizing: border-box; */
+  font-family: "Raleway", sans-serif;
+  /* color: #2c3e50; */
+  /* color: blue; */
+  /* background-color: blue; */
+
+  /*  */
+}
+body {
+  background-color: blue;
+}
+.chat_icon {
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  font-size: 80px;
+  color: #ffffff;
+  /* padding: 2px 8px; */
+  /* background-color: white; */
+  /* color: red; */
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chat_box {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 450px;
+  height: 90vh;
+  /*  */
+  background-color: #dedede;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0);
+}
+
+.chat_box.active {
+  transform: scaleY(1);
+}
+.hidden {
+  display: none !important;
+}
+.conv-form-wrapper textarea {
+  height: 30px;
+  /* width: 50px; */
+  overflow: hidden;
+  resize: none;
+}
+
+#messages {
+  padding: 30px;
+}
