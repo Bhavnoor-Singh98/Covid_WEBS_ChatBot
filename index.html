@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- chat bot starts -->
+        <link rel="stylesheet" href="jquery.convform.css">
+    <!-- chat bot jquery-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.convform.js"></script>
+    <script src="sc.js"></script>
+
+    <!-- chat bot ends -->
+</head>
+<body>
+    <div class="chat_icon">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+    </div>
+
+    <div class="chat_box">
+        <div class="conv-form-wrapper">  
+            <form action="" method="GET" class="hidden">
+                
+                <select name="category" data-conv-question="Hello! Welcome to Covid-19 Pandemic Bot.
+                Want to know about CoViD-19?">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <!-- Yes category starts -->
+                <div data-conv-fork="category">
+                    <div data-conv-case="Yes">
+                        <select name="category" data-conv-question="Select an option.">
+                            <option value="Symptoms">Symptoms</option>
+                            <option value="Prevention">Prevention</option>
+                            <option value="Links">Links/Videos</option>
+                        </select>
+                        
+                        <!-- <input type="text" name="domain_name" data-conv-question="Please tell me domain name." > -->
+                    </div>
+                    <!-- <div data-conv-case="digital Marketing">
+                        <input type="text" name="company_name" data-conv-question="Please tell me domain name." >
+                    </div> -->
+                </div>
+                <!-- Yes category ends -->
+
+                <!-- No category starts -->
+                <div data-conv-fork="category">
+                    <div data-conv-case="No">
+                        <select name="category" data-conv-question="Select Covid-19 Stats you want to see.">
+                            <option value="Overall">Overall</option>
+                            <option value="Country">Country</option>
+                            <option value="Graphical">Graphical</option>
+                            <option value="India">India</option>
+                        </select>
+                        
+                        <!-- <input type="text" name="domain_name" data-conv-question="Please tell me domain name." > -->
+                    </div>
+                    <!-- <div data-conv-case="digital Marketing">
+                        <input type="text" name="company_name" data-conv-question="Please tell me domain name." >
+                    </div> -->
+                </div>
+                <!-- Yes category ends -->
+
+                <div data-conv-fork="category">
+                    <!-- Symptoms starts -->
+                    <div data-conv-case="Symptoms">
+                        <input type="text" data-conv-question="Common Symptoms are:" data-no-answer="true">
+                        <input type="text" data-conv-question="1. Fever" data-no-answer="true">
+                        <input type="text" data-conv-question="2. Dry Cough" data-no-answer="true">
+                        <input type="text" data-conv-question="3. Tiredness" data-no-answer="true">
+                        <input type="text" data-conv-question="Want to Know More?  Please! visit HomePage." data-no-answer="true">
+                        
+                        <input type="text" data-conv-question="Hope it helped you.
+                        Stay Safe and Happy!!" data-no-answer="true">
+                    </div>
+                    <!-- Symptoms ends -->
+                    <!-- Prevention starts -->
+                    <div data-conv-case="Prevention">
+                        <input type="text" data-conv-question="Preventions to be taken are:" data-no-answer="true">
+                        <input type="text" data-conv-question="1. Clean Hands often" data-no-answer="true">
+                        <input type="text" data-conv-question="2. Wear Mask properly" data-no-answer="true">
+                        <input type="text" data-conv-question="3. Maintain a proper Social Distance" data-no-answer="true">
+                        <input type="text" data-conv-question="Want to Know More?  Please! visit HomePage." data-no-answer="true">
+                        
+                        <input type="text" data-conv-question="Hope it helped you.
+                        Stay Safe and Happy!!" data-no-answer="true">
+                    </div>
+                    <!-- Prevention ends -->
+                    <!-- Links starts -->
+                    <div data-conv-case="Links">
+                        
+                        <input type="text" data-conv-question="Please! visit HomePage." data-no-answer="true">
+                        
+                        <input type="text" data-conv-question="Hope it helped you.
+                        Stay Safe and Happy!!" data-no-answer="true">
+                    </div>
+                    <!-- Links ends -->
+                    <!-- Overall Results starts -->
+                    <div data-conv-case="Overall">
+                        <input type="text" data-conv-question="Please! visit HomePage." data-no-answer="true">
+                        
+                        <input type="text" data-conv-question="Hope it helped you.
+                        Stay Safe and Happy!!" data-no-answer="true">
+                    </div>
+                    <!-- Overall Results ends -->
+
+                    <!-- Country Results starts -->
+                    <div data-conv-case="Country">
+                        <input type="text" data-conv-question="Please! Click on Country Wise Results Tab" data-no-answer="true">
+                        
+                        <input type="text" data-conv-question="Hope it helped you.
+                        Stay Safe and Happy!!" data-no-answer="true">
+                    </div>
+                    <!-- Country Results ends -->
+
+                    <!-- Graphical Results starts -->
+                    <div data-conv-case="Graphical">
+                        <input type="text" data-conv-question="Please! Click on Graphical Stats Tab" data-no-answer="true">
+                        
+                        <input type="text" data-conv-question="Hope it helped you.
+                        Stay Safe and Happy!!" data-no-answer="true">
+                    </div>
+                    <!-- Graphical Results ends -->
+
+                    <!-- India's Stats starts -->
+                    <div data-conv-case="India">
+                        <input type="text" data-conv-question="Please! Click on India's Stats Tab" data-no-answer="true">
+                        
+                        <input type="text" data-conv-question="Hope it helped you.
+                        Stay Safe and Happy!!" data-no-answer="true">
+                    </div>
+                    <!-- India's Stats ends -->
+
+
+                </div>    
+                    
+                <!-- <input type="text" name="name" data-conv-question="Please tell me your name." >
+                <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?"> -->
+                <select  data-conv-question="Confirm GoodBye?">
+                    <option value="Confirm Exit">Exit</option>
+                    
+                </select>
+       
+       
+            </form>
+        </div>    
+    </div>
+
+    
+</body>
+</html>
