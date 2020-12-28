@@ -26,6 +26,8 @@ body {
 }
 h1 {
   color: white;
+  text-align: center;
+  padding-top: 20px;
 }
 .chat_icon {
   position: fixed;
