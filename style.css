@@ -24,6 +24,9 @@
 body {
   background-color: #2ecc71;
 }
+h1 {
+  color: white;
+}
 .chat_icon {
   position: fixed;
   right: 30px;
